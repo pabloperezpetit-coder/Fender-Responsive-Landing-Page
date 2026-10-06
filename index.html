@@ -1,251 +1,204 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Fender - Diseño Multimedial 2026</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing page académica inspirada en Fender, desarrollada con HTML, CSS y Bootstrap 5.">
+  <title>Fender | El sonido de las leyendas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
 
-<body>
-
-
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-    <div class="container">
-
-        <a class="navbar-brand fw-bold" href="#inicio">FENDER</a>
-
-        <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menu"
-            aria-controls="menu"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="menu">
-
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
-                <li class="nav-item"><a class="nav-link" href="#modelos">Modelos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-            </ul>
-
-        </div>
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold letter-spacing" href="#inicio">FENDER</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#modelos">Modelos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-danger px-4" href="#contacto">Contacto</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
 
-
-<section id="inicio" class="hero">
-
-    <div id="carouselExample" class="carousel slide">
-
-        <div class="carousel-inner">
-
-            <div class="carousel-item active">
-                <img src="Imagenes/Fender logo.png" class="d-block w-100" alt="Logo Fender">
-                <div class="carousel-caption">
-                    <h1 class="display-4 fw-bold">EL SONIDO DE LAS LEYENDAS</h1>
-                    <p>Desde 1946 creando instrumentos que cambiaron la historia del rock.</p>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <img src="Imagenes/Fender strato.webp" class="d-block w-100" alt="Stratocaster">
-                <div class="carousel-caption">
-                    <h1>STRATOCASTER</h1>
-                    <p>La guitarra más famosa del mundo.</p>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <img src="Imagenes/Fender telecaster.webp" class="d-block w-100" alt="Telecaster">
-                <div class="carousel-caption">
-                    <h1>TELECASTER</h1>
-                    <p>Simple. Elegante. Inmortal.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-
+<header id="inicio" class="hero">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Fender"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Stratocaster"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Telecaster"></button>
     </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Imagenes/Fender logo.png" class="d-block w-100" alt="Identidad visual de Fender">
+        <div class="carousel-overlay"></div>
+        <div class="carousel-caption text-start container">
+          <span class="badge text-bg-danger mb-3">DESDE 1946</span>
+          <h1 class="display-2 fw-bold">El sonido de las leyendas</h1>
+          <p class="lead col-lg-7">Instrumentos que definieron generaciones y siguen impulsando nuevas formas de hacer música.</p>
+          <a href="#modelos" class="btn btn-danger btn-lg mt-2">Explorar modelos</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/Fender strato.webp" class="d-block w-100" alt="Guitarra Fender Stratocaster">
+        <div class="carousel-overlay"></div>
+        <div class="carousel-caption">
+          <span class="badge text-bg-light mb-3">ICONO</span>
+          <h2 class="display-3 fw-bold">Stratocaster</h2>
+          <p class="lead">Contornos inconfundibles, tres pickups y una versatilidad que hizo historia.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/Fender telecaster.webp" class="d-block w-100" alt="Guitarra Fender Telecaster">
+        <div class="carousel-overlay"></div>
+        <div class="carousel-caption">
+          <span class="badge text-bg-light mb-3">CLÁSICO</span>
+          <h2 class="display-3 fw-bold">Telecaster</h2>
+          <p class="lead">Simple, directa y reconocible desde el primer acorde.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Anterior</span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Siguiente</span></button>
+  </div>
+</header>
 
+<section class="bg-dark text-white py-4 border-top border-secondary">
+  <div class="container">
+    <div class="row text-center g-3">
+      <div class="col-6 col-md-3"><div class="h3 fw-bold mb-0">1946</div><small class="text-white-50">Fundación</small></div>
+      <div class="col-6 col-md-3"><div class="h3 fw-bold mb-0">1950</div><small class="text-white-50">Telecaster</small></div>
+      <div class="col-6 col-md-3"><div class="h3 fw-bold mb-0">1951</div><small class="text-white-50">Precision Bass</small></div>
+      <div class="col-6 col-md-3"><div class="h3 fw-bold mb-0">1954</div><small class="text-white-50">Stratocaster</small></div>
+    </div>
+  </div>
 </section>
 
-
-<section id="historia">
-    <div class="container">
-        <div class="row align-items-center">
-
-            <div class="col-lg-6">
-                <img src="Imagenes/Leo fender.jpg" class="img-fluid rounded" alt="Leo Fender">
-            </div>
-
-            <div class="col-lg-6">
-                <h2 class="mb-4">La Historia de Fender</h2>
-                <p>Fender revolucionó la industria musical...</p>
-                <p>Fundada en 1946 por Leo Fender...</p>
-                <p>La Telecaster fue la primera guitarra...</p>
-                <p>En 1954 apareció la Stratocaster...</p>
-                <p>Décadas después Fender continúa...</p>
-                <p>Actualmente la marca mantiene vivo su legado...</p>
-            </div>
-
+<section id="historia" class="py-5 py-lg-6">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="position-relative">
+          <img src="Imagenes/Leo fender.jpg" class="img-fluid rounded-4 shadow-lg w-100 history-img" alt="Leo Fender">
+          <span class="position-absolute bottom-0 start-0 m-3 badge rounded-pill text-bg-danger px-3 py-2">Leo Fender</span>
         </div>
+      </div>
+      <div class="col-lg-6">
+        <span class="text-danger fw-bold text-uppercase small">Innovación que cambió la música</span>
+        <h2 class="display-5 fw-bold mt-2 mb-4">La historia de Fender</h2>
+        <p class="lead">Leo Fender convirtió ideas prácticas de diseño y producción en instrumentos que transformaron la música popular.</p>
+        <p class="text-secondary">Fundada en California en 1946, Fender impulsó la guitarra eléctrica de cuerpo sólido a escala comercial. La Telecaster consolidó un diseño simple y resistente; poco después, el Precision Bass redefinió el rol del bajo eléctrico.</p>
+        <p class="text-secondary">En 1954 llegó la Stratocaster, con su cuerpo contorneado, tres pickups y sistema de vibrato. Su diseño se convirtió en una referencia para generaciones de guitarristas y en uno de los símbolos visuales más reconocibles de la cultura musical.</p>
+        <div class="accordion accordion-flush mt-4" id="historyAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed fw-semibold px-0" type="button" data-bs-toggle="collapse" data-bs-target="#legacy">¿Por qué Fender fue tan influyente?</button></h3>
+            <div id="legacy" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+              <div class="accordion-body px-0 text-secondary">Combinó fabricación eficiente, ergonomía, reparación sencilla y una identidad sonora que músicos de rock, blues, pop, funk, country y otros géneros hicieron propia.</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-
-<section id="modelos">
-    <div class="container">
-
-        <h2 class="text-center mb-5">Modelos Icónicos</h2>
-
-        <div class="row g-4">
-
-            <div class="col-md-6 col-xl-3">
-                <div class="card h-100">
-                    <img src="Imagenes/Strato 2.jpg" class="card-img-top" alt="Stratocaster">
-                    <div class="card-body">
-                        <h5>Stratocaster</h5>
-                        <p>Versátil, cómoda y utilizada por miles de artistas.</p>
-                        <a href="#" class="btn btn-danger">Ver más</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-xl-3">
-                <div class="card h-100">
-                    <img src="Imagenes/Telecaster 2.webp" class="card-img-top" alt="Telecaster">
-                    <div class="card-body">
-                        <h5>Telecaster</h5>
-                        <p>Diseño clásico y sonido brillante.</p>
-                        <a href="#" class="btn btn-danger">Ver más</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-xl-3">
-                <div class="card h-100">
-                    <img src="Imagenes/Jazzmaster.jpg" class="card-img-top" alt="Jazzmaster">
-                    <div class="card-body">
-                        <h5>Jazzmaster</h5>
-                        <p>Usada en indie, rock alternativo y surf.</p>
-                        <a href="#" class="btn btn-danger">Ver más</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-xl-3">
-                <div class="card h-100">
-                    <img src="Imagenes/Precisionnn.webp" class="card-img-top" alt="Precision Bass">
-                    <div class="card-body">
-                        <h5>Precision Bass</h5>
-                        <p>El bajo eléctrico más influyente de la historia.</p>
-                        <a href="#" class="btn btn-danger">Ver más</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+<section id="modelos" class="py-5 py-lg-6 bg-body-tertiary">
+  <div class="container">
+    <div class="row align-items-end mb-5">
+      <div class="col-lg-7">
+        <span class="text-danger fw-bold text-uppercase small">Una familia de clásicos</span>
+        <h2 class="display-5 fw-bold mt-2 mb-0">Modelos icónicos</h2>
+      </div>
+      <div class="col-lg-5 mt-3 mt-lg-0"><p class="text-secondary mb-0">Cuatro instrumentos que ayudaron a construir el lenguaje visual y sonoro de Fender.</p></div>
     </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-xl-3">
+        <article class="card model-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img src="Imagenes/Strato 2.jpg" class="card-img-top" alt="Fender Stratocaster">
+          <div class="card-body d-flex flex-column p-4"><span class="badge text-bg-dark align-self-start mb-3">GUITARRA</span><h3 class="h4">Stratocaster</h3><p class="text-secondary flex-grow-1">Versátil, ergonómica y reconocible por su configuración de tres pickups.</p><button class="btn btn-outline-dark stretched-link" data-bs-toggle="modal" data-bs-target="#stratoModal">Conocer más</button></div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-xl-3">
+        <article class="card model-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img src="Imagenes/Telecaster 2.webp" class="card-img-top" alt="Fender Telecaster">
+          <div class="card-body d-flex flex-column p-4"><span class="badge text-bg-dark align-self-start mb-3">GUITARRA</span><h3 class="h4">Telecaster</h3><p class="text-secondary flex-grow-1">Diseño esencial, ataque definido y una personalidad sonora inmediata.</p><a class="btn btn-outline-dark" href="#video">Ver historia</a></div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-xl-3">
+        <article class="card model-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img src="Imagenes/Jazzmaster.jpg" class="card-img-top" alt="Fender Jazzmaster">
+          <div class="card-body d-flex flex-column p-4"><span class="badge text-bg-dark align-self-start mb-3">GUITARRA</span><h3 class="h4">Jazzmaster</h3><p class="text-secondary flex-grow-1">Un diseño offset asociado al surf, indie y rock alternativo.</p><a class="btn btn-outline-dark" href="#contacto">Consultar</a></div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-xl-3">
+        <article class="card model-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img src="Imagenes/Precisionnn.webp" class="card-img-top" alt="Fender Precision Bass">
+          <div class="card-body d-flex flex-column p-4"><span class="badge text-bg-danger align-self-start mb-3">BAJO</span><h3 class="h4">Precision Bass</h3><p class="text-secondary flex-grow-1">El instrumento que ayudó a establecer el estándar del bajo eléctrico moderno.</p><a class="btn btn-outline-dark" href="#contacto">Consultar</a></div>
+        </article>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-<section id="video" class="bg-dark text-white py-5">
-
-    <div class="container text-center">
-
-        <h2 class="mb-5">La historia detrás de Fender</h2>
-
-        <div class="ratio ratio-16x9">
-            <iframe
-                src="https://www.youtube.com/embed/I1z-bKeeC4g"
-                title="Historia de Fender"
-                allowfullscreen>
-            </iframe>
-        </div>
-
+<section id="video" class="bg-dark text-white py-5 py-lg-6">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-4">
+      <div class="col-lg-8"><span class="badge text-bg-danger mb-3">FENDER STORY</span><h2 class="display-5 fw-bold">La historia detrás del sonido</h2><p class="text-white-50">Un recorrido audiovisual por el legado de una marca que acompañó algunos de los cambios más importantes de la música moderna.</p></div>
     </div>
-
+    <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg video-frame">
+      <iframe src="https://www.youtube.com/embed/I1z-bKeeC4g" title="Historia de Fender" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
 </section>
 
-
-<section id="contacto">
-
-    <div class="container">
-        <div class="row justify-content-center">
-
-            <div class="col-md-8 col-lg-6">
-
-                <h2>Contacto</h2>
-
-                <form action="https://formsubmit.co/pablo.perezpetit@gmail.com" method="POST">
-
-                    <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
-                    <input type="text" name="apellido" class="form-control" placeholder="Apellido" required>
-                    <input type="email" name="email" class="form-control" placeholder="Email" required>
-                    <input type="text" name="asunto" class="form-control" placeholder="Asunto">
-                    <textarea name="comentario" class="form-control" rows="5" placeholder="Comentario" required></textarea>
-
-                    <input type="hidden" name="_subject" value="Nuevo mensaje desde la web Fender">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-
-                    <button type="submit" class="btn btn-danger">Enviar mensaje</button>
-
-                </form>
-
-            </div>
-        </div>
+<section id="contacto" class="py-5 py-lg-6">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5">
+        <span class="text-danger fw-bold text-uppercase small">Contacto</span>
+        <h2 class="display-5 fw-bold mt-2">Hablemos de música</h2>
+        <p class="text-secondary lead">Formulario de demostración del proyecto. Completá tus datos y enviá un mensaje.</p>
+        <div class="alert alert-light border mt-4" role="alert"><strong>Proyecto académico</strong><br><small class="text-secondary">Landing page desarrollada con HTML, CSS y Bootstrap 5.</small></div>
+      </div>
+      <div class="col-lg-7">
+        <form class="p-4 p-md-5 bg-white rounded-4 shadow" action="https://formsubmit.co/pablo.perezpetit@gmail.com" method="POST">
+          <div class="row g-3">
+            <div class="col-md-6"><label for="nombre" class="form-label">Nombre</label><input id="nombre" type="text" name="nombre" class="form-control form-control-lg" required></div>
+            <div class="col-md-6"><label for="apellido" class="form-label">Apellido</label><input id="apellido" type="text" name="apellido" class="form-control form-control-lg" required></div>
+            <div class="col-12"><label for="email" class="form-label">Email</label><input id="email" type="email" name="email" class="form-control form-control-lg" required></div>
+            <div class="col-12"><label for="asunto" class="form-label">Asunto</label><select id="asunto" name="asunto" class="form-select form-select-lg"><option>Consulta general</option><option>Guitarras</option><option>Bajos</option><option>Historia de Fender</option></select></div>
+            <div class="col-12"><label for="comentario" class="form-label">Mensaje</label><textarea id="comentario" name="comentario" class="form-control" rows="5" required></textarea></div>
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde la web Fender"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table">
+            <div class="col-12 d-grid"><button type="submit" class="btn btn-danger btn-lg">Enviar mensaje</button></div>
+          </div>
+        </form>
+      </div>
     </div>
-
+  </div>
 </section>
 
-<footer>
-
-    <div class="container">
-
-        <h4>FENDER</h4>
-
-        <p>
-            Pablo Perez Petit<br>
-            Diseño Multimedial<br>
-            Maquetado y Desarrollo Web<br>
-            2026
-        </p>
-
-        <div>
-            <a href="https://www.instagram.com/fender/" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/fender" target="_blank">Facebook</a>
-            <a href="https://www.youtube.com/@fender" target="_blank">YouTube</a>
-        </div>
-
-        <div class="footer-copy mt-4">
-            © 2026 Fender Fan Site | Pablo Perez Petit
-        </div>
-
+<footer class="bg-black text-white py-5">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-5"><h2 class="h3 fw-bold letter-spacing">FENDER</h2><p class="text-white-50 mb-0">Proyecto académico — Diseño Multimedial · Maquetado y Desarrollo Web · 2026</p></div>
+      <div class="col-lg-7"><nav class="d-flex flex-wrap gap-3 justify-content-lg-end"><a class="link-light link-offset-2" href="https://www.instagram.com/fender/" target="_blank" rel="noopener">Instagram</a><a class="link-light link-offset-2" href="https://www.facebook.com/fender" target="_blank" rel="noopener">Facebook</a><a class="link-light link-offset-2" href="https://www.youtube.com/@fender" target="_blank" rel="noopener">YouTube</a></nav></div>
     </div>
-
+    <hr class="border-secondary my-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between gap-2 text-white-50 small"><span>© 2026 Fender Fan Site</span><span>Pablo Perez Petit</span></div>
+  </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<div class="modal fade" id="stratoModal" tabindex="-1" aria-labelledby="stratoTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content border-0 rounded-4 overflow-hidden"><div class="row g-0"><div class="col-md-5"><img src="Imagenes/Strato 2.jpg" class="w-100 h-100 modal-img" alt="Fender Stratocaster"></div><div class="col-md-7"><div class="modal-header border-0"><h2 class="modal-title h4" id="stratoTitle">Fender Stratocaster</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div><div class="modal-body pt-0"><p>Presentada en 1954, la Stratocaster se destacó por su cuerpo contorneado, tres pickups y sistema de vibrato. Su flexibilidad sonora la convirtió en una de las guitarras eléctricas más influyentes.</p><div class="d-flex flex-wrap gap-2"><span class="badge text-bg-light">1954</span><span class="badge text-bg-light">3 pickups</span><span class="badge text-bg-light">Vibrato</span></div></div></div></div></div></div>
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
