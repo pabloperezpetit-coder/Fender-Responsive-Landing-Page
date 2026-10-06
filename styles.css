@@ -1,0 +1,151 @@
+
+
+.hero {
+    margin-top: 56px;
+}
+
+.carousel-item img {
+    height: 90vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#historia {
+    padding: 80px 0;
+}
+
+
+#modelos {
+    padding: 80px 0;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+
+
+#video {
+    padding: 80px 0;
+}
+
+
+#contacto {
+    background: #f7f7f7;
+    padding: 100px 0;
+}
+
+#contacto h2 {
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#contacto form {
+    max-width: 700px;
+    margin: auto;
+}
+
+#contacto .form-control {
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#contacto .form-control:focus {
+    border-color: #D52B1E;
+    box-shadow: none;
+}
+
+#contacto .btn-danger {
+    width: 100%;
+    padding: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#contacto .btn-danger:hover {
+    background-color: #a61f16;
+    border-color: #a61f16;
+}
+
+
+
+footer {
+    background: #111;
+    color: white;
+    padding: 80px 0 40px;
+    text-align: center;
+}
+
+footer h4 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+footer p {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    line-height: 2;
+    color: rgba(255,255,255,0.85);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+.footer-copy {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 40px;
+    padding-top: 25px;
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.6);
+}
+
+
+@media (max-width: 768px) {
+
+    .carousel-item img {
+        height: 60vh;
+    }
+
+    #contacto {
+        padding: 60px 15px;
+    }
+
+    footer a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .carousel-caption {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
